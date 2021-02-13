@@ -1,0 +1,32 @@
+.card {
+  /* background: linear-gradient(
+    135deg,
+    var(--main-color),
+    var(--secondary-color)
+  ); */
+  background-image: url(https://wallpapercave.com/wp/wp3528351.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: 5px;
+}
+
+.card__img {
+  max-width: 250px;
+  box-shadow: 3px 3px 10px black;
+  opacity: 0.9;
+}
+
+.card__name,
+.card__nick,
+.card__status,
+.card__birth {
+  color: var(--text-color);
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
