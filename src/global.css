@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 *,
 *::after,
@@ -8,6 +8,12 @@
 
 html {
   font-size: 16px;
+}
+
+:root {
+  --main-color: rgb(0, 114, 6);
+  --secondary-color: rgb(161, 197, 0);
+  --text-color: rgb(255, 255, 255);
 }
 
 body {
