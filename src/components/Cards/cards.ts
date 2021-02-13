@@ -1,5 +1,6 @@
 import { createElement } from "../../utils/createElement";
 
+
 export function createCard({ img, name, nick, status, occupation }) {
   return createElement("article", {
     className: "card",
