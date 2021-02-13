@@ -15,7 +15,7 @@ export const Walter = () =>
     name: "Walter White",
     nick: "Heisenberg",
     status: "Presumed dead",
-    birth: "09-07-1958",
+    occupation: "dealer",
   });
 
 //get a Chacater from IP

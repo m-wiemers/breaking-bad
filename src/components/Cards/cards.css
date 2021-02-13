@@ -9,18 +9,23 @@
   background-repeat: no-repeat;
   padding: 10px;
   margin: 5px;
+  max-width: 400px;
+
 }
 
 .card__img {
   max-width: 250px;
   box-shadow: 3px 3px 10px black;
-  opacity: 0.9;
+  opacity: 0.85;
+  border: 0.5em solid #fff;
 }
 
 .card__name,
 .card__nick,
 .card__status,
-.card__birth {
+.card__birth,
+.card__occ {
+  margin: 0.5em;
   color: var(--text-color);
   text-align: center;
 }
@@ -28,5 +33,5 @@
 .container {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }

@@ -1,6 +1,7 @@
 import { createElement } from "../../utils/createElement";
 
-export function createCard({ img, name, nick, status, birth }) {
+
+export function createCard({ img, name, nick, status, occupation }) {
   return createElement("article", {
     className: "card",
     childs: [
@@ -21,12 +22,12 @@ export function createCard({ img, name, nick, status, birth }) {
             alt: "",
           }),
           createElement("p", {
-            className: "card__status",
-            innerText: status,
+            className: "card__occ",
+            innerText: occupation,
           }),
           createElement("p", {
-            className: "card__birth",
-            innerText: birth,
+            className: "card__status",
+            innerText: status,
           }),
         ],
       }),

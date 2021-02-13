@@ -1,11 +1,12 @@
-import { createCard } from "../components/Cards/cards";
-import { createElement } from "./createElement";
+
+// import { createCard } from "../components/Cards/cards";
+// import { createElement } from "./createElement";
 
 export type APICharacter = {
   char_id: number;
   name: string;
   birthday: string;
-  occupation: [string, string];
+  occupation: { first: string; second: string };
   img: string;
   status: string;
   nickname: string;
@@ -17,7 +18,7 @@ export type Character = {
   name: string;
   nick: string;
   status: string;
-  birth: string;
+  occupation: string;
 };
 
 // Convert a Chacter
@@ -28,7 +29,7 @@ function convertToCharacter(apiCharacter: APICharacter): Character {
     name: apiCharacter.name,
     nick: apiCharacter.nickname,
     status: apiCharacter.status,
-    birth: "Birthday: " + apiCharacter.birthday,
+    occupation: "Occupation: " + apiCharacter.occupation,
   };
 }
 
