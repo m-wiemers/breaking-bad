@@ -22,19 +22,38 @@ export function createCard({ img, name, nick, status, occupation }) {
         className: "card__nick",
         innerText: nick,
       }),
-      createElement("img", {
-        className: "card__img",
-        src: img,
-        alt: "",
+      createElement("div", {
+        className: "card__img__card",
+        childs: [
+          createElement("div", {
+            className: "card__img__inner",
+            childs: [
+              createElement("div", {
+                className: "card__img__front",
+                childs: [
+                  createElement("img", {
+                    className: "card__img",
+                    src: img,
+                    alt: "",
+                  }),
+                ],
+              }),
+              createElement("div", {
+                className: "card__img__back",
+                innerText: status,
+              }),
+            ],
+          }),
+        ],
       }),
       createElement("p", {
         className: "card__occ",
         innerText: occupation,
       }),
-      createElement("p", {
-        className: "card__status",
-        innerText: status,
-      }),
+      // createElement("p", {
+      //   className: "card__status",
+      //   innerText: status,
+      // }),
     ],
   });
   return createElement("article", {
