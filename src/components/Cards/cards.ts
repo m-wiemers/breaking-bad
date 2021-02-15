@@ -2,6 +2,7 @@ import { createElement } from "../../utils/createElement";
 
 export function getPizza() {
   const pizza = createElement("img", {
+    className: "pizzaImg",
     src:
       "https://cdn.pixabay.com/photo/2016/07/10/16/05/pizza-1507939_960_720.png",
   });
@@ -9,18 +10,18 @@ export function getPizza() {
 }
 
 export function createCard({ img, name, nick, status, occupation }) {
+  const headline = createElement("h2", {
+    className: "card__name",
+    innerText: name,
+  });
   const cardInfo = createElement("div", {
     className: "card__info",
     childs: [
-      createElement("h2", {
-        className: "card__name",
-        innerText: name,
-      }),
+      headline,
       createElement("p", {
         className: "card__nick",
         innerText: nick,
       }),
-
       createElement("img", {
         className: "card__img",
         src: img,
@@ -45,7 +46,7 @@ export function createCard({ img, name, nick, status, occupation }) {
         innerText: "get a Pizza",
         onclick: () => {
           const pizza = getPizza();
-          cardInfo.append(pizza);
+          headline.append(pizza);
         },
       }),
     ],

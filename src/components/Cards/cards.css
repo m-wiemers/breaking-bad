@@ -8,7 +8,14 @@
   text-align: center;
 }
 
+.pizzaImg {
+  position: absolute;
+  width: 200px;
+  height: auto;
+}
+
 .card__img {
+  order: 50;
   max-width: 250px;
   box-shadow: 3px 3px 10px black;
   opacity: 0.85;
