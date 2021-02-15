@@ -1,4 +1,3 @@
-
 // import { createCard } from "../components/Cards/cards";
 // import { createElement } from "./createElement";
 
@@ -6,7 +5,7 @@ export type APICharacter = {
   char_id: number;
   name: string;
   birthday: string;
-  occupation: { first: string; second: string };
+  occupation: string;
   img: string;
   status: string;
   nickname: string;
@@ -33,12 +32,10 @@ function convertToCharacter(apiCharacter: APICharacter): Character {
   };
 }
 
-export async function getCharacter(char_id: number) {
-  const response = await fetch(
-    `https://breakingbadapi.com/api/characters/${char_id}`
-  );
-  const result = (await response.json()) as APICharacter;
-  const character = convertToCharacter(result);
+export async function getCharacter() {
+  const response = await fetch(`https://breakingbadapi.com/api/characters/1`);
+  const result = (await response.json()) as APICharacter[];
+  const character = convertToCharacter(result[0]);
   return character;
 }
 

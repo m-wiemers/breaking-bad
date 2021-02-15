@@ -26,7 +26,7 @@ export const characterFromAPI = (args, { loaded: { character } }) => {
 
 characterFromAPI.loaders = [
   async () => ({
-    character: await getCharacter(1),
+    character: await getCharacter(),
   }),
 ];
 
