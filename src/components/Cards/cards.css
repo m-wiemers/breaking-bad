@@ -1,16 +1,10 @@
 .card {
-  /* background: linear-gradient(
-    135deg,
-    var(--main-color),
-    var(--secondary-color)
-  ); */
   background-image: url(https://wallpapercave.com/wp/wp3528351.jpg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 10px;
   margin: 5px;
   max-width: 400px;
-
 }
 
 .card__img {
