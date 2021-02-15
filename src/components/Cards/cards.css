@@ -5,9 +5,17 @@
   padding: 10px;
   margin: 5px;
   max-width: 400px;
+  text-align: center;
+}
+
+.pizzaImg {
+  position: absolute;
+  width: 200px;
+  height: auto;
 }
 
 .card__img {
+  order: 50;
   max-width: 250px;
   box-shadow: 3px 3px 10px black;
   opacity: 0.85;
@@ -28,4 +36,17 @@
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 850px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
 }

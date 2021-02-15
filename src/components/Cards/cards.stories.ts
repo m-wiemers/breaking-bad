@@ -35,6 +35,11 @@ export const CharactersFromAPI = (args, { loaded: { characters } }) => {
     className: "container",
     childs: characters.map((character) => createCard(character)),
   });
+  // const pizza = createElement(
+  //   "img", {
+  //   (src =
+  //     "https://cdn.pixabay.com/photo/2016/07/10/16/05/pizza-1507939_960_720.png")},
+  // );
   return container;
 };
 
