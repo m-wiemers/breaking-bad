@@ -1,6 +1,8 @@
 // import { createCard } from "../components/Cards/cards";
 // import { createElement } from "./createElement";
 
+import { createElement } from "./createElement";
+
 export type APICharacter = {
   char_id: number;
   name: string;
